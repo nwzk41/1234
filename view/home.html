@@ -1,0 +1,15 @@
+<div class="home">
+	<h1>{{ homeCtrl.pageName }}</h1>
+	<ul>
+		<li ng-repeat="person in homeCtrl.getUserList | orderBy : 'name':true">{{person.name}} : {{person.age}}</li>
+	</ul>
+	<div class="swiper-container">
+		  <div class="swiper-wrapper">
+		    <div class="swiper-slide">slider1</div>
+		    <div class="swiper-slide">slider2</div>
+		    <div class="swiper-slide">slider3</div>
+		  </div>
+		  <!-- 分页器 -->
+		  <div class="swiper-pagination"></div>
+	</div>
+</div> 
