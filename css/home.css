@@ -1,9 +1,24 @@
 .home h1{
 	color: yellow;
 	width: 100%;
-	height: 1rem;
+	height: 10rem;
 	margin: 0 auto;
 	background-color: greenyellow;
+}
+.home .nav{
+	width: 100%;
+	height : 1.5rem;
+	display: flex;
+	align-content: center;
+	justify-content: space-around;
+	position: absolute;
+	top: 0;
+	z-index: 3;
+	background-color: hotpink;
+}
+.home .nav input{
+	height : 0.8rem;
+	width: 80%;
 }
 .swiper-container{
 	width: 100%;
@@ -28,3 +43,104 @@
 .swiper-wrapper div:nth-of-type(3){
 	background-color: greenyellow;
 }
+
+/* 图片集合样式 */
+.pic_banner{
+	width: 100%;
+	height: 5rem;
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+.pic_banner .pic_item{
+	width: 50%;
+	height: 2.5rem;
+	box-sizing: border-box;
+	border: 1px solid #bbb;
+	background-color: aliceblue;
+}
+/*热卖样式*/
+.pic_hot{
+	width: 100%;
+	height: 3.5rem;
+	margin: 0.2667rem 0;
+	display: flex;
+	flex-wrap: wrap;	
+}
+.pic_hot_item{
+	width: 33.3333%;
+	height: 100%;
+	box-sizing: border-box;
+	border: 1px solid #bbb;
+	background-color: greenyellow;
+}
+/*精选样式*/
+.jingxuan{
+	width: 100%;
+	height: 4.34677rem;
+	overflow: auto;
+	
+	background-color: whitesmoke;
+}
+.jingxuan h2,.tuijian h2{
+	width: 100%;
+	height: 1rem;
+	line-height: 1rem;
+	/*align-items: flex-start;*/
+	
+}
+.jingxuan .jingxuan_pics{
+	display: flex;
+	flex-wrap: nowrap;
+}
+.jingxuan_pics .jingxuan_pic{
+	width: 6.4rem;
+	height: 3.2rem;
+	margin:0 0.1333rem;
+	background-color: darkorange;
+}
+/*推荐样式*/
+.tuijian{
+	width: 100%;
+	background-color: floralwhite;
+}
+.tuijian .tuijian_ul{
+	width: 100%;
+}
+ .tuijian_ul .tuijian_item{
+ 	list-style: none;
+ 	width: 9.733rem;
+ 	height: 3.5466rem;
+ 	margin: 0 auto;
+ 	background-color: cadetblue;
+ 	border-bottom: 0.0133rem solid #ccc;
+ 	display: flex;
+ 	flex-wrap: nowrap;
+ 	justify-content: space-around;
+ 	align-items: center;
+ }
+ .tuijian_item img{
+ 	width: 3rem;
+ 	height: 3rem;
+ }
+ .tuijian_item .item_decs{
+ 	width: 6.2478rem;
+ 	height: 3rem;
+ 	background-color: deepskyblue;
+ 	display: flex;
+ 	align-content: space-between;
+ }
+ .item_decs p,.item_decs h2,.item_decs div{
+ 	width: 100%;
+ }
+ .item_decs p{
+ 	color: red;
+ }
+ .item_address{
+ 	background: white;
+ }
+ .item_address span{
+ 	border: 0.01333rem solid #ccc;
+ 	border-radius: 0.04rem;
+ 	margin-right: 0.1333rem;
+ }

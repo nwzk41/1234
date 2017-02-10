@@ -15,6 +15,9 @@ a{
 ul li{
 	list-style: none;
 }
+.mainView{
+	overflow: auto;
+}
 #footer{
 	position: fixed;
 	left: 0;
@@ -28,4 +31,12 @@ ul li{
 #footer ul{
 	display: flex;
 	justify-content: space-around;
+}
+.class1{
+	background-color: blue;
+	height:calc(100% - 44px);
+}
+.class2{
+	background-color: yellow;
+	height:100%;
 }

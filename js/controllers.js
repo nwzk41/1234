@@ -22,12 +22,24 @@ angular.module('myApp')
 				loop : true
 			})
 	}])
-	.controller('MarketCtrl',[function () {
+	.controller('MarketCtrl',['$location',function ($location) {
 		var self = this;
+		self.goBack = function () {
+			//默认浏览器历史记录
+//			window.history.back();
+			//跳到指定的路由
+			$location.path('home');
+		};
+		$('.market h1').css({
+			color : 'white'
+		});
 	}])
 	.controller('CartCtrl',[function () {
 		var self = this;
 	}])
 	.controller('MineCtrl',[function () {
+		var self = this;
+	}])
+	.controller('MoreCtrl',[function () {
 		var self = this;
 	}])
