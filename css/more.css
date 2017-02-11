@@ -1,0 +1,38 @@
+.more .logIn{
+	width: 100%;
+	height: 4.114rem;
+	background-color: blueviolet;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.logIn .logUser{
+	width: 1.334rem;
+	height: 1.334rem;
+	background-color: orange;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 1.334rem;
+}
+.logIn .log{
+	width: 2.24rem;
+	height: 0.746rem;
+	border-radius:0.1333rem;
+	margin-top: 0.2667rem; 
+	background-color: white;
+	border: 0 solid #ccc;
+} 
+.more .userOrder{
+	width: 100%;
+	background-color: white;
+	margin: 0.2667rem 0;
+}
+
+.userAct .order{
+	width: 100%;
+	height: 0.64rem;
+	padding: 0.384rem 0;
+	border-bottom: 0.0133rem solid #bbb; 
+	font-size: 1.3em;
+}

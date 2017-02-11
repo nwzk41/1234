@@ -42,7 +42,7 @@ angular.module('myApp',['ngRoute','angularCSS'])
 		.when('/more',{
 
 			templateUrl :'./view/more.html',
-			controller : 'MineCtrl as mineCtrl' 
+			controller : 'MoreCtrl as moreCtrl' 
 		})
 		.otherwise({
 			redirectTo :'/home',

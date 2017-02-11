@@ -34,12 +34,26 @@ angular.module('myApp')
 			color : 'white'
 		});
 	}])
-	.controller('CartCtrl',[function () {
+	.controller('CartCtrl',['$css',function ($css) {
+		$css.add('css/cart.css');
 		var self = this;
+		var mySwiper = new Swiper('.swiper-container', {
+				autoplay: 2000,//可选选项，自动滑动
+				//操作swiper之后，还可以继续自动播放
+				autoplayDisableOnInteraction : false,
+				//分页器
+				pagination : '.swiper-pagination',
+				//环路(注意：设置这个后每个分页原理会改变，写样式的时候小心)
+				loop : true,
+			})
+		
 	}])
 	.controller('MineCtrl',[function () {
 		var self = this;
 	}])
-	.controller('MoreCtrl',[function () {
+	.controller('MoreCtrl',['$css',function ($css) {
+		$css.add('css/more.css');
 		var self = this;
+		
+		
 	}])
