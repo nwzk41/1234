@@ -7,6 +7,7 @@ angular.module('myApp')
 		$css.add('css/home.css');
 		var self = this;
 		//方法，调用HomeService中的数据给home.html页面使用
+		self.getTopList = HomeService.getTopList();
 		self.getTuiJianList = HomeService.getTuiJianList();
 		self.getSwiperImgS = HomeService.getSwiperImgS();
 		self.jxSwiperImgs = HomeService.jxSwiperImgs;

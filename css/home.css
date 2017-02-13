@@ -14,7 +14,7 @@
 	position: absolute;
 	top: 0;
 	z-index: 3;
-	background-color: hotpink;
+	background-color: rgba(0,0,0,.1);
 }
 .home .nav input{
 	height : 0.8rem;
@@ -85,8 +85,8 @@
 	width: 50%;
 	height: 2.5rem;
 	box-sizing: border-box;
-	border: 1px solid #bbb;
-	background-color: aliceblue;
+	border: 0.01333rem solid #eee;
+	background-color: white;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
@@ -94,18 +94,21 @@
 .pic_item .banner_item{
 	height: 1.6rem;
 	width:2.9rem;
-	background-color: blue; 
+	background-color: white; 
 	display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 .banner_item h2{
 	font-size: 0.3733rem;
-
+}
+.banner_item p{
+	color: #999;
 }
 .pic_item img,.hot_item_tit img{
 	width: 1.6rem;
 	height: 1.6rem;
+	
 }
 /*热卖样式*/
 .pic_hot{

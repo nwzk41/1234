@@ -1,7 +1,12 @@
 //这里统一管理service（服务）
 angular.module('myApp')
 	.factory('HomeService',[function () {
-		var 
+		var topList = [
+			{img:'http://shihuo.hupucdn.com/trade/goods/style/20170204/2359e426827e1af3cbeb9f0ee16f8ef91486213414.jpg?imageView2/0/w/176/h/176/interlace/1',title:'篮球 BASKETBALL',dec:'球鞋90秒欧文3'},
+			{img:'http://shihuo.hupucdn.com/trade/goods/style/20170207/2f87fbefdf57615e2468551bc03896fc1486432465.jpg?imageView2/0/w/120/h/120/interlace/1',title:'篮球 BASKETBALL',dec:'球鞋90秒欧文3'},
+			{img:'http://shihuo.hupucdn.com/trade/goods/style/20161017/0ae1d2b201c1f8ca2b4a0babf1a8af691476710563.jpg?imageView2/0/w/120/h/120/interlace/1',title:'篮球 BASKETBALL',dec:'球鞋90秒欧文3'},
+			{img:'http://shihuo.hupucdn.com/trade/goods/style/20161017/0ae1d2b201c1f8ca2b4a0babf1a8af691476710563.jpg?imageView2/0/w/120/h/120/interlace/1',title:'篮球 BASKETBALL',dec:'球鞋90秒欧文3'}
+		]
 		var list = [
 					{ label:'独家消息！又有机会捡一波白菜！',itemDesc:"Nike官网折扣区再7折！",
 					img : 'http://shihuo.hupucdn.com/newsIndex11/201702/0923/8727d48ed7db2dc587406bb20c27c11d.jpg?imageView2/0/w/300/h/300/interlace/1'
@@ -41,6 +46,9 @@ angular.module('myApp')
 		];
 		
 		return {
+			getTopList : function () {
+				return topList
+			},
 			getTuiJianList : function () {
 				//模拟用户列表数据
 				return list
