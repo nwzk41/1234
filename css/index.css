@@ -19,7 +19,7 @@ ul li{
 	overflow: auto;
 }
 #footer{
-	position: fixed;
+	position: absolute;
 	left: 0;
 	bottom: 0;
 	width: 100%;
@@ -33,7 +33,7 @@ ul li{
 	justify-content: space-around;
 }
 .class1{
-	background-color: blue;
+	background-color: #EEEEEE;
 	height:calc(100% - 44px);
 }
 .class2{

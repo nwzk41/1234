@@ -4,9 +4,11 @@
 	<!-- 主页轮播图 -->
 	<div class="swiper-container">
 		  <div class="swiper-wrapper">
-		    <div class="swiper-slide">slider1</div>
-		    <div class="swiper-slide">slider2</div>
-		    <div class="swiper-slide">slider3</div>
+		    <div ng-repeat="item in homeCtrl.getSwiperImgS" class="swiper-slide">
+		    	<img ng-src="{{item.img}}"/>
+		    </div>
+		    <!--<div class="swiper-slide">slider2</div>
+		    <div class="swiper-slide">slider3</div>-->
 		  </div>
 		  <!-- 分页器 -->
 		  <div class="swiper-pagination"></div>
@@ -41,34 +43,42 @@
 	<!-- 精选 -->
 	<div class="jingxuan">
 		<h2>精选专题</h2>
-		<div class="jingxuan_pics">
-			<a href="#"><div class="jingxuan_pic"></div></a>
-			<a href="#"><div class="jingxuan_pic"></div></a>
-			<a href="#"><div class="jingxuan_pic"></div></a>
-		</div>
 		
+			<!--<div class="swiper-container">
+				  <div class="swiper-wrapper">
+				  		<div ng-repeat="item in homeCtrl.jxSwiperImgs" class="swiper-slide">
+				    		<a href="#"><img ng-src="{{item.img}}" class="jingxuan_pic"/></a>
+				    	</div>
+				  </div>
+			</div>-->
+			<div class="swiper-container">
+			  <div class="swiper-wrapper">
+			    <div ng-repeat="item in homeCtrl.jxSwiperImgs" class="swiper-slide">
+			    	<a href=""><img ng-src="{{item.img}}"/></a>
+			    </div>
+			  </div>
+		</div>
 	</div>
 	<div class="tuijian">
 		<h2>每日推荐</h2>
 			<ul class="tuijian_ul">
-				<a href="#">
-					<li class="tuijian_item">
-						<img src="#" alt="" />
+				<!-- 请求每日推荐数据 -->
+				<li class="tuijian_item" ng-repeat="item in homeCtrl.getTuiJianList">
+					<a href="#/xiangqing/{{item.id}}">
+						<img ng-src="{{item.img}}" alt="" />
 						<div class="item_decs">
-							<h2>独家消息!又有机会捡一波白菜</h2>
-							<p>Nike官网折扣区再7折！</p>
+							<h2>{{item.label}}</h2>
+							<p>{{item.itemDesc}}</p>
 							<div class="item_address">
-								<span>JUST DO IT</span>
-								<div class="item_web">NIKE</div>
+								<span>{{item.fatoryCsr}}</span>
+								<div class="item_web">{{item.fatoryName}}</div>
 							</div>
-						</div>	
-					</li>
-				</a>
-				<li class="tuijian_item"><a href="#"></a></li>
-				<li class="tuijian_item"><a href="#"></a></li>
+						</div>
+					</a>
+				</li>
 			</ul>
 	</div>
-	<ul>
+	<!--<ul>
 		<li ng-repeat="person in homeCtrl.getUserList | orderBy : 'name':true">{{person.name}} : {{person.age}}</li>
-	</ul>
+	</ul>-->
 </div> 

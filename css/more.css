@@ -36,3 +36,23 @@
 	border-bottom: 0.0133rem solid #bbb; 
 	font-size: 1.3em;
 }
+.more .orderInf{
+	width: 100%;
+	background-color: white;
+	margin: 0.2667rem 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+
+}
+.orderInf .orderImg{
+	width: 2rem;
+	height: 2rem;
+}
+.orderInf .orderDes{
+	width: 7rem;
+	height: 2rem;
+	margin: 0.3rem 0;
+	background-color: pink;
+}

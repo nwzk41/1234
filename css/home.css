@@ -22,37 +22,64 @@
 	border: 0.01333rem solid #bbb;
 	border-radius: 0.1333rem;
 }
-.swiper-container{
+.home>.swiper-container{
 	width: 100%;
-	height: 5.0667rem;-moz-animation: 302-;
+	height: 5.0667rem;
+	-moz-animation: 302-;
+}
+						
+.swiper-wrapper img{
+	width: 100%;
+	height: 5.0667rem;
+}
+/*精选swiper 样式*/
+/*.jingxuan .swiper-container{
+	width: 100%;
+	position: relative;
 }
 			
-			
-.swiper-slide{
-	font-size: 0.4rem;
-	line-height: 5.0667rem;
-	text-align: center;
+.jingxuan .swiper-slide{
+    width: 80%;
+    height: 3.2rem;
+	margin: 0.2667rem;
+	border: 1px solid black;
 }
-			
-.swiper-wrapper div:nth-of-type(1){
-	background-color: red;
-}
-			
-.swiper-wrapper div:nth-of-type(2){
-	background-color: pink;
-}
-			
-.swiper-wrapper div:nth-of-type(3){
-	background-color: greenyellow;
-}
+.jingxuan .swiper-slide img{
+	width: 6.4rem;
+	height: 3.2rem;
+}*/
 
+.jingxuan  .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+.jingxuan  .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        width: 80%;
+        border: 1px solid black;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
 /* 图片集合样式 */
 .pic_banner{
 	width: 100%;
 	height: 5rem;
 	display: flex;
 	flex-wrap: wrap;
-	
 }
 .pic_banner .pic_item{
 	width: 50%;
@@ -61,7 +88,6 @@
 	border: 1px solid #bbb;
 	background-color: aliceblue;
 	display: flex;
-	/*flex-direction: column; */
 	align-items: center;
 	justify-content: space-around;
 }
@@ -119,43 +145,33 @@
 /*精选样式*/
 .jingxuan{
 	width: 100%;
-	height: 4.34677rem;
-	overflow: auto;
-	
 	background-color: whitesmoke;
 }
 .jingxuan h2,.tuijian h2{
 	width: 100%;
 	height: 1rem;
 	line-height: 1rem;
-	/*align-items: flex-start;*/
-	
 }
-.jingxuan .jingxuan_pics{
-	display: flex;
-	flex-wrap: nowrap;
-}
-.jingxuan_pics .jingxuan_pic{
-	width: 6.4rem;
-	height: 3.2rem;
-	margin:0 0.1333rem;
-	background-color: darkorange;
-}
+
 /*推荐样式*/
 .tuijian{
 	width: 100%;
 	background-color: floralwhite;
+	margin: 0.2667rem 0;
 }
 .tuijian .tuijian_ul{
 	width: 100%;
+	background-color: white;
 }
- .tuijian_ul .tuijian_item{
+ .tuijian_ul .tuijian_item {
  	list-style: none;
  	width: 9.733rem;
- 	height: 3.5466rem;
  	margin: 0 auto;
- 	background-color: cadetblue;
+ 	background-color: white;
  	border-bottom: 0.0133rem solid #ccc;
+ }
+ .tuijian_item a{
+ 	padding: 0.2667rem 0;
  	display: flex;
  	flex-wrap: nowrap;
  	justify-content: space-around;
@@ -169,14 +185,10 @@
  .tuijian_item .item_decs{
  	width: 6.2478rem;
  	height: 3rem;
- 	background-color: deepskyblue;
  	display: flex;
     flex-direction: column;
     justify-content: space-around;
  }
- /*.item_decs p,.item_decs h2,.item_decs div{
- 	width: 100%;
- }*/
  .item_decs p{
  	color: red;
  }

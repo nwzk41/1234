@@ -44,6 +44,10 @@ angular.module('myApp',['ngRoute','angularCSS'])
 			templateUrl :'./view/more.html',
 			controller : 'MoreCtrl as moreCtrl' 
 		})
+		.when('/xiangqing/:name',{
+			templateUrl :'./view/xiangQing.html',
+			controller : 'XiangQingCtrl as xiangQingCtrl' 
+		})
 		.otherwise({
 			redirectTo :'/home',
 			controller : 'HomeCtrl as homeCtrl' 

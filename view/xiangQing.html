@@ -1,0 +1,25 @@
+<div class="xiangqing">
+	<div class="nav">
+		<div class="back">
+			<a href="#/home"><img src="./images/head_back.png" alt="" /></a>
+		</div>
+		<span id="">信息详情</span>
+		<div class="moreInf">
+			<img src="./images/head_list.png" alt="" />
+		</div>	
+	</div>
+	<!-- 产品信息 -->
+	<div class="item">
+		<img ng-src="{{xiangQingCtrl.itemImg}}" alt="">
+		<div class="desc">
+			<div class="itemTitle">{{xiangQingCtrl.itemTit}}</div>
+			<div class="itemPrice">{{xiangQingCtrl.itemPrice}}</div>
+		</div>
+	</div>
+</div>
+<h1>
+	{{xiangQingCtrl.name}} : {{xiangQingCtrl.age}}
+</h1>
+<h1>{{xiangQingCtrl.lists}}</h1>
+<h1>{{xiangQingCtrl.itemNum}}<input type="button" value="添加到购物车" class="add"/></h1>
+
