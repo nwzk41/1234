@@ -60,31 +60,66 @@ angular.module('myApp')
 			jxSwiperImgs : jxSwiperImgs
 		}
 	}])
+	.factory('CartService',[function () {
+		//专题数据
+		var showlist = [
+				{img:"http://shihuo.hupucdn.com/appShiwuHome/201612/2719/1267919777022d0516cc1b4cc8b18d31.png?imageView2/2/w/240/h/240/interlace/1",title : '最炫AJ缤纷来袭'},
+				{img:"http://shihuo.hupucdn.com/appShiwuHome/201612/2719/1267919777022d0516cc1b4cc8b18d31.png?imageView2/2/w/240/h/240/interlace/1",title : '最炫AJ缤纷来袭'},
+				{img:"http://shihuo.hupucdn.com/appShiwuHome/201612/2719/1267919777022d0516cc1b4cc8b18d31.png?imageView2/2/w/240/h/240/interlace/1",title : '最炫AJ缤纷来袭'},
+				{img:"http://shihuo.hupucdn.com/appShiwuHome/201612/2719/1267919777022d0516cc1b4cc8b18d31.png?imageView2/2/w/240/h/240/interlace/1",title : '最炫AJ缤纷来袭'},
+				{img:"http://shihuo.hupucdn.com/appShiwuHome/201612/2719/1267919777022d0516cc1b4cc8b18d31.png?imageView2/2/w/240/h/240/interlace/1",title : '最炫AJ缤纷来袭'},
+				{img:"http://shihuo.hupucdn.com/appShiwuHome/201612/2719/1267919777022d0516cc1b4cc8b18d31.png?imageView2/2/w/240/h/240/interlace/1",title : '最炫AJ缤纷来袭'},
+				{img:"http://shihuo.hupucdn.com/appShiwuHome/201612/2719/1267919777022d0516cc1b4cc8b18d31.png?imageView2/2/w/240/h/240/interlace/1",title : '最炫AJ缤纷来袭'},
+				{img:"http://shihuo.hupucdn.com/appShiwuHome/201612/2719/1267919777022d0516cc1b4cc8b18d31.png?imageView2/2/w/240/h/240/interlace/1",title : '最炫AJ缤纷来袭'},
+				{img:"http://shihuo.hupucdn.com/appShiwuHome/201612/2719/1267919777022d0516cc1b4cc8b18d31.png?imageView2/2/w/240/h/240/interlace/1",title : '最炫AJ缤纷来袭'},
+		]
+		//精选推荐
+		var tuijian = [
+				{title: '全部',type : 0},
+				{title:'实战推荐' ,type : 1},
+				{title:'潮流穿搭' ,type : 2},
+				{title:'跑步有道' ,type : 3},
+				{title:'品质生活' ,type : 4},
+				{title:'开箱首晒' ,type : 5},
+				{title:'健身党' ,type : 6},
+				{title:'众测' ,type : 7},
+				{title:'欲望清单' ,type : 8},
+		
+		]
+		return {
+			getShowList : function () {
+				return showlist
+			},
+			getTuiJianList : function() {
+				return tuijian
+			}
+		}
+	}])
 	//创建公共服务，存放公共数据
 	.factory('pulicService',[function () {
-					//模拟后台获取的数据,将数据放入到服务里，实现数据共享的目的
-					var list = [
-						{id : "001",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1309/d757f9731b961b7493797166c06e21df.jpg",itemTit:"全新升级！UA 安德玛 Clutchfit Drive 3 男子篮球鞋",itemPrice:"$62.99（转运到手约￥559）",itemNum : 0},
-						{id : "002",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1309/d757f9731b961b7493797166c06e21df.jpg",itemTit:"全新升级！UA 安德玛 Clutchfit Drive 3 篮球鞋",itemPrice:"$62.99（转运到手约￥559）",itemNum : 0},
-						{id : "003",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1309/d757f9731b961b7493797166c06e21df.jpg",itemTit:"全新升级！UA 安德玛 Clutchfit Drive 3 鞋",itemPrice:"$62.99（转运到手约￥559）",itemNum : 0},
-						{id : "004",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1309/d757f9731b961b7493797166c06e21df.jpg",itemTit:"全新升级！UA 安德玛 Clutchfit Drive 3 男篮球鞋",itemPrice:"$62.99（转运到手约￥559）",itemNum : 0},
-						{id : "005",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1309/d757f9731b961b7493797166c06e21df.jpg",itemTit:"全新升级！UA 安德玛 Clutchfit Drive 3 ",itemPrice:"$62.99（转运到手约￥559）",itemNum : 0},
-						{id : "006",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1309/d757f9731b961b7493797166c06e21df.jpg",itemTit:"全新升级！UA 安德玛 Clutchfit Drive 3 球鞋",itemPrice:"$62.99（转运到手约￥559）",itemNum : 0},
-						{id : "007",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1309/d757f9731b961b7493797166c06e21df.jpg",itemTit:"全新升级！UA 安德玛 Clutchfit Drive 3 篮球",itemPrice:"$62.99（转运到手约￥559）",itemNum : 0},
-					]
-					//返回一个对象，这个对象就是这个服务的实例对象（单例）
-					//以上的list 属于私有变量，
-					//在其他控制器中无法直接访问到list，
-					//我们可以通过在服务的对象中，
-					//设置一些方法进行数据访问
-					return {
-						//list 作为一种方法，不能直接访问数据，能对数据进行惭怍
-						getlist : function () {
-							return list;
-						},
-						//添加数据的接口
-						addItem : function (item) {
-							list.push(item);
-						}
-					}
-				}])
+		//模拟后台获取的数据,将数据放入到服务里，实现数据共享的目的
+		var list = [
+				{id : "001",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1309/d757f9731b961b7493797166c06e21df.jpg",itemTit:"全新升级！UA 安德玛 Clutchfit Drive 3 男子篮球鞋",itemPrice:"$62.99（转运到手约￥559）",itemNum : 0},
+				{id : "002",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1309/d757f9731b961b7493797166c06e21df.jpg",itemTit:"全新升级！UA 安德玛 Clutchfit Drive 3 篮球鞋",itemPrice:"$62.99（转运到手约￥559）",itemNum : 0},
+				{id : "003",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1309/d757f9731b961b7493797166c06e21df.jpg",itemTit:"全新升级！UA 安德玛 Clutchfit Drive 3 鞋",itemPrice:"$62.99（转运到手约￥559）",itemNum : 0},
+				{id : "004",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1309/d757f9731b961b7493797166c06e21df.jpg",itemTit:"全新升级！UA 安德玛 Clutchfit Drive 3 男篮球鞋",itemPrice:"$62.99（转运到手约￥559）",itemNum : 0},
+				{id : "005",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1309/d757f9731b961b7493797166c06e21df.jpg",itemTit:"全新升级！UA 安德玛 Clutchfit Drive 3 ",itemPrice:"$62.99（转运到手约￥559）",itemNum : 0},
+				{id : "006",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1309/d757f9731b961b7493797166c06e21df.jpg",itemTit:"全新升级！UA 安德玛 Clutchfit Drive 3 球鞋",itemPrice:"$62.99（转运到手约￥559）",itemNum : 0},
+				{id : "007",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1309/d757f9731b961b7493797166c06e21df.jpg",itemTit:"全新升级！UA 安德玛 Clutchfit Drive 3 篮球",itemPrice:"$62.99（转运到手约￥559）",itemNum : 0},
+			]
+		//返回一个对象，这个对象就是这个服务的实例对象（单例）
+		//以上的list 属于私有变量，
+	    //在其他控制器中无法直接访问到list，
+		//我们可以通过在服务的对象中，
+		//设置一些方法进行数据访问
+			return {
+			//list 作为一种方法，不能直接访问数据，能对数据进行惭怍
+				getlist : function () {
+					return list;
+				},
+			//添加数据的接口
+				addItem : function (item) {
+					list.push(item);
+				}
+			}
+	}])

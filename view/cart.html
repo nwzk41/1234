@@ -16,62 +16,54 @@
 			<div class="blockList_item">
 				<h2>清单活动</h2>
 				<p>秀出你的情侣款</p>
-				<img src="#" alt="" />
+				<img src="http://shihuo.hupucdn.com/appShiwuHome/201702/0914/b646137715d7aad702ae727e68e95f4a.jpg?imageView2/0/w/150/h/150/interlace/1" alt="" />
 			</div>
 		</a>
 		<a href="#">
-			<div class="blockList_item">
+			<div class="blockList_item" >
 				<h2>清单活动</h2>
 				<p>秀出你的情侣款</p>
-				<img src="#" alt="" />
+				<img src="http://shihuo.hupucdn.com/appShiwuHome/201702/0914/b646137715d7aad702ae727e68e95f4a.jpg?imageView2/0/w/150/h/150/interlace/1" alt="" />
 			</div>
 		</a>
 		<a href="#">
-			
+			<div class="blockList_item" >
+				<h2>清单活动</h2>
+				<p>秀出你的情侣款</p>
+				<img src="http://shihuo.hupucdn.com/appShiwuHome/201702/0914/b646137715d7aad702ae727e68e95f4a.jpg?imageView2/0/w/150/h/150/interlace/1" alt="" />
+			</div>
 		</a>
 	</div>
 	<!-- 热门专题 -->
 	<div class="zhuanti">
 		<h2>热门专题</h2>
 		<div class="zhuantiList">
-			<a href="#">
-				<div class="zhuantiItem">
-					<img src="#" alt="" />
-					<p>最炫AJ缤纷来袭</p>
+				<div class="zhuantiItem" ng-repeat="item in cartCtrl.showList">
+					<a href="#"><img ng-src="{{item.img}}" alt="" /><p>{{item.title}}</p></a>
 				</div>
-			</a>
-			<a href="#">
-				<div class="zhuantiItem">
-					<img src="#" alt="" />
-					<p>最炫AJ缤纷来袭</p>
-				</div>
-			</a>
-			<a href="#">
-				<div class="zhuantiItem">
-					<img src="#" alt="" />
-					<p>最炫AJ缤纷来袭</p>
-				</div>
-			</a>
-			<a href="#">
-				<div class="zhuantiItem">
-					<img src="#" alt="" />
-					<p>最炫AJ缤纷来袭</p>
-				</div>
-			</a>
-			<a href="#">
-				<div class="zhuantiItem">
-					<img src="#" alt="" />
-					<p>最炫AJ缤纷来袭</p>
-				</div>
-			</a>
-			<a href="#">
-				<div class="zhuantiItem">
-					<img src="#" alt="" />
-					<p>最炫AJ缤纷来袭</p>
-				</div>
-			</a>
 		</div>
 	</div>
 	
-	<!--  -->
+	<!-- 精选推荐 -->
+	<div class="jxTuiJian">
+		<h2>精选推荐</h2>
+		<div class="jxTuiJianList">
+				<div class="jxTuiJianItem" ng-repeat="item in cartCtrl.tuijianList">
+					<p ng-click="cartCtrl.changePage('{{item.type}}');">{{item.title}}</p>
+					<ul ng-switch on="cartCtrl.listType">
+						<li ng-switch-when="0">哈哈</li>
+						<li ng-switch-when="1">1</li>
+						<li ng-switch-when="2">2</li>
+						<li ng-switch-when="3">4</li>
+						<li ng-switch-when="4">5</li>
+						<li ng-switch-when="5">6</li>
+						<li ng-switch-when="6">7</li>
+						<li ng-switch-when="7">8</li>
+						<li ng-switch-when="8">0</li>
+						<li ng-switch-default>其他</li>
+					</ul>
+				</div>
+		</div>
+
+	</div>
 </div>

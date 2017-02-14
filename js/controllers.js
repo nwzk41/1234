@@ -83,9 +83,15 @@ angular.module('myApp')
 			color : 'white'
 		});
 	}])
-	.controller('CartCtrl',['$css',function ($css) {
+	.controller('CartCtrl',['$css','CartService',function ($css,CartService) {
 		$css.add('css/cart.css');
 		var self = this;
+		self.showList = CartService.getShowList();
+		self.tuijianList = CartService.getTuiJianList();
+		self.listType = "0";
+					self.changePage = function (pageName){
+						self.listType = pageName;
+					}
 		var mySwiper = new Swiper(' .swiper-container', {
 				autoplay: 2000,//可选选项，自动滑动
 				//操作swiper之后，还可以继续自动播放
@@ -213,16 +219,31 @@ angular.module('myApp')
 	.controller('MoreCtrl',['$css','pulicService',function ($css,pulicService) {
 		$css.add('css/more.css');
 		var self = this;
+		//购物车添加商品功能
+		var content = "";
 		for(item of pulicService.getlist()){
-			if(item.itemNum == 1 ){
+			if(item.itemNum >= 1 ){
 				console.log("————————————")
-				self.orderImg = item.itemImg
-				self.orderInf = item.itemTit;
-				self.orderAddress = item.itemPrice;
+				content += `<div class = "itemInf">
+							<img class="orderImg" src="${item.itemImg}"></img>
+							<div class="orderDes">
+								<p>${item.itemTit}</p>
+								<div class="address">${item.itemPrice} 数量 ：${item.itemNum}</div>
+							</div>
+						</div>`
+//				self.orderImg = item.itemImg
+//				self.orderInf = item.itemTit;
+//				self.orderAddress = item.itemPrice;
+//				self.itemNum = item.itemNum;
 				//清空该项，放到购物车移除商品事件
 //				item.itemNum = 0;
 			}
 //			lists.push(item.id);
 		}
+		
+		console.log(content);
+		
+		$('.orderInf').html(content);
+		console.log($('.orderInf').html());
 		
 	}])

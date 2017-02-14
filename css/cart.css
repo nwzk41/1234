@@ -1,31 +1,19 @@
 /*轮播图样式*/
-.swiper-container{
+.cart .swiper-container{
 	width: 100%;
 	height: 3.573rem;
 }			
-.swiper-slide{
+.crat .swiper-slide{
 	font-size: 0.4rem;
 	line-height: 3.573rem;
 	text-align: center;
 }
 			
-.swiper-wrapper div:nth-of-type(1){
-	background-color: red;
-}
-			
-.swiper-wrapper div:nth-of-type(2){
-	background-color: pink;
-}
-			
-.swiper-wrapper div:nth-of-type(3){
-	background-color: greenyellow;
-}
-
 /*上部清单*/
 .cart .blockList{
 	width: 100%;
 	height: 3.573rem;
-	background: pink;
+	background: white;
 	display: flex;
 	/*margin-bottom: 0.2667rem;*/
 }
@@ -35,7 +23,7 @@
 .blockList .blockList_item{
 	width: 100%;
 	height: 100%;
-	border-right: 0.0133rem solid #bbb;
+	border-right: 0.0133rem solid #eee;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -57,27 +45,47 @@
 	height: 1.6rem;
 }
 
-.zhuanti{
+.zhuanti,.jxTuiJian{
 	width: 100%;
 	margin: 0.2667rem 0;
-	background-color: hotpink; 
+	background-color: white; 
 }
-.zhuanti h2{
+.zhuanti h2,.jxTuiJian h2{
 	text-align: center;
 	padding: 0.1333rem 0; 
 }
-.zhuantiList{
+.zhuantiList,.jxTuiJianList{
 	display: flex;
+	flex-direction: row;
 	flex-wrap: nowrap;
 	overflow:auto;
+	padding-bottom: 0.2rem;
 }
 
 .zhuantiItem img{
-	padding: 0 0.133rem;
+	padding: 0 0.2rem;
 	width: 2.514rem;
 	height: 2.514rem;
 }
 .zhuantiItem p{
 	text-align: center;
 	margin-bottom: 0.133rem;
+}
+/*.jxTuiJianItem{
+	display: block;
+
+	width: 3rem;
+	height: 2rem;
+	margin:.2rem;
+}*/
+.jxTuiJianItem p{
+	background-color: red;
+	width: 2rem;
+    font-size: .35rem;
+	padding: .2rem;
+	margin:.2rem;
+	color: white;
+	text-align: center;
+	border-radius: .5rem;
+	
 }
