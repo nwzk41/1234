@@ -57,9 +57,10 @@
         height: 100%;
     }
 .jingxuan .swiper-wrapper{
-	width: 80%;
+	
 }
 .jingxuan  .swiper-slide {
+		width: 80%;
         text-align: center;
         font-size: 18px;
         background: #fff;
@@ -128,14 +129,13 @@
 	width: 33.3333%;
 	height: 100%;
 	box-sizing: border-box;
-	border: 1px solid #bbb;
-	background-color: greenyellow;
+	border: 1px solid #eee;
+	background-color: white;
 }
 .pic_hot_item .hot_item_tit{
 	margin: auto;
 	width: 95%;
 	height: 100%;
-	background: pink;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -154,7 +154,7 @@
 /*精选样式*/
 .jingxuan{
 	width: 100%;
-	background-color: whitesmoke;
+	background-color: white;
 }
 .jingxuan h2,.tuijian h2{
 	width: 100%;
@@ -165,9 +165,12 @@
 /*推荐样式*/
 .tuijian{
 	width: 100%;
-	background-color: floralwhite;
+	background-color: white;
 	margin: 0.2667rem 0;
 }
+/*.tuijian h2,.jingxuan h2{
+	margin-left: 0.3rem;
+}*/
 .tuijian .tuijian_ul{
 	width: 100%;
 	background-color: white;
