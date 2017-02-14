@@ -37,9 +37,12 @@
 .desc .itemPrice{
 	width: 90%;
 	color: red;
+	font-size: .6rem;
 	margin: 0 auto;
 	padding-bottom: 0.6rem;
-	
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 /*h1{
 	background: hotpink;

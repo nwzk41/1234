@@ -97,23 +97,23 @@ angular.module('myApp')
 	}])
 	.factory('mineService',[function () {
 		var minelist = [
-					{ label:'独家消息！又有机会捡一波白菜！',itemDesc:"Nike官网折扣区再7折！",
-					img : 'http://shihuo.hupucdn.com/newsIndex11/201702/0923/8727d48ed7db2dc587406bb20c27c11d.jpg?imageView2/0/w/300/h/300/interlace/1'
+					{ label:'大热单品！Champion Jersey 男式 短袖T恤',itemDesc:"Nike官网折扣区再7折！",
+					img : 'http://shihuo.hupucdn.com/newsIndex11/201702/1417/f0056d8fee24c189b3dfb140cc4b885e.jpg?imageView2/0/w/300/h/300/interlace/1'
 					,fatoryCsr:"JUST DO IT",fatoryName:"NIKE",id : "010",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1309/d757f9731b961b7493797166c06e21df.jpg",itemTit:"全新升级！UA 安德玛 Clutchfit Drive 3 男子篮球鞋",itemPrice:"$62.99（转运到手约￥559）"},
-					{ label:'独家消息！又有机会捡一波白菜！',itemDesc:"Nike官网折扣区再7折！",
-					img : 'http://shihuo.hupucdn.com/newsIndex11/201702/0923/8727d48ed7db2dc587406bb20c27c11d.jpg?imageView2/0/w/300/h/300/interlace/1'
+					{ label:'大热单品！Champion Jersey 男式 短袖T恤',itemDesc:"Nike官网折扣区再7折！",
+					img : 'http://shihuo.hupucdn.com/newsIndex11/201702/1417/f0056d8fee24c189b3dfb140cc4b885e.jpg?imageView2/0/w/300/h/300/interlace/1'
 					,fatoryCsr:"JUST DO IT",fatoryName:"NIKE",id : "011",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1309/d757f9731b961b7493797166c06e21df.jpg",itemTit:"全新升级！UA 安德玛 Clutchfit Drive 3 ",itemPrice:"$62.99（转运到手约￥559）"},
 					{ label:'独家消息！又有机会捡一波白菜！',itemDesc:"Nike官网折扣区再7折！",
 					img : 'http://shihuo.hupucdn.com/newsIndex11/201702/0923/8727d48ed7db2dc587406bb20c27c11d.jpg?imageView2/0/w/300/h/300/interlace/1'
 					,fatoryCsr:"JUST DO IT",fatoryName:"NIKE",id : "012",itemdes: "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1309/d757f9731b961b7493797166c06e21df.jpg",itemTit:"全新升级！UA 安德玛 Clutchfit Drive 3 篮球鞋",itemPrice:"$62.99（转运到手约￥559）"},
-					{ label:'独家消息！又有机会捡一波白菜！',itemDesc:"Nike官网折扣区再7折！",
-					img : 'http://shihuo.hupucdn.com/newsIndex11/201702/0923/8727d48ed7db2dc587406bb20c27c11d.jpg?imageView2/0/w/300/h/3000/interlace/1'
+					{ label:'大热单品！Champion Jersey 男式 短袖T恤',itemDesc:"Nike官网折扣区再7折！",
+					img : 'http://shihuo.hupucdn.com/newsIndex11/201702/1417/f0056d8fee24c189b3dfb140cc4b885e.jpg?imageView2/0/w/300/h/300/interlace/1'
 					,fatoryCsr:"JUST DO IT",fatoryName:"NIKE",id : "013",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1309/d757f9731b961b7493797166c06e21df.jpg",itemTit:"全新升级！UA 安德玛 Clutchfit Drive 3 子篮球鞋",itemPrice:"$62.99（转运到手约￥559）"},
 					{ label:'独家消息！又有机会捡一波白菜！',itemDesc:"Nike官网折扣区再7折！",
 					img : 'http://shihuo.hupucdn.com/newsIndex11/201702/0923/8727d48ed7db2dc587406bb20c27c11d.jpg?imageView2/0/w/300/h/300/interlace/1'
 					,fatoryCsr:"JUST DO IT",fatoryName:"NIKE",id : "014",itemdes: "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1309/d757f9731b961b7493797166c06e21df.jpg",itemTit:"全新升级！UA 安德玛 Clutchfit Drive 3 球鞋",itemPrice:"$62.99（转运到手约￥559）"},
-					{ label:'独家消息！又有机会捡一波白菜！',itemDesc:"Nike官网折扣区再7折！",
-					img : 'http://shihuo.hupucdn.com/newsIndex11/201702/0923/8727d48ed7db2dc587406bb20c27c11d.jpg?imageView2/0/w/300/h/300/interlace/1'
+					{ label:'大热单品！Champion Jersey 男式 短袖T恤',itemDesc:"Nike官网折扣区再7折！",
+					img : 'http://shihuo.hupucdn.com/newsIndex11/201702/1417/f0056d8fee24c189b3dfb140cc4b885e.jpg?imageView2/0/w/300/h/300/interlace/1'
 					,fatoryCsr:"JUST DO IT",fatoryName:"NIKE",id : "015",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1309/d757f9731b961b7493797166c06e21df.jpg",itemTit:"全新升级！UA 安德玛 Clutchfit Drive 3 鞋",itemPrice:"$62.99（转运到手约￥559）"},
 				];
 		return {
@@ -126,23 +126,23 @@ angular.module('myApp')
 	.factory('pulicService',[function () {
 		//模拟后台获取的数据,将数据放入到服务里，实现数据共享的目的
 		var list = [
-				{id : "001",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1309/d757f9731b961b7493797166c06e21df.jpg",itemTit:"全新升级！UA 安德玛 Clutchfit Drive 3 男子篮球鞋",itemPrice:"$62.99（转运到手约￥559）",itemNum : 0},
-				{id : "002",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1309/d757f9731b961b7493797166c06e21df.jpg",itemTit:"全新升级！UA 安德玛 Clutchfit Drive 3 篮球鞋",itemPrice:"$62.99（转运到手约￥559）",itemNum : 0},
-				{id : "003",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1309/d757f9731b961b7493797166c06e21df.jpg",itemTit:"全新升级！UA 安德玛 Clutchfit Drive 3 鞋",itemPrice:"$62.99（转运到手约￥559）",itemNum : 0},
-				{id : "004",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1309/d757f9731b961b7493797166c06e21df.jpg",itemTit:"全新升级！UA 安德玛 Clutchfit Drive 3 男篮球鞋",itemPrice:"$62.99（转运到手约￥559）",itemNum : 0},
-				{id : "005",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1309/d757f9731b961b7493797166c06e21df.jpg",itemTit:"全新升级！UA 安德玛 Clutchfit Drive 3 ",itemPrice:"$62.99（转运到手约￥559）",itemNum : 0},
-				{id : "006",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1309/d757f9731b961b7493797166c06e21df.jpg",itemTit:"全新升级！UA 安德玛 Clutchfit Drive 3 球鞋",itemPrice:"$62.99（转运到手约￥559）",itemNum : 0},
-				{id : "007",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1309/d757f9731b961b7493797166c06e21df.jpg",itemTit:"全新升级！UA 安德玛 Clutchfit Drive 3 篮球",itemPrice:"$62.99（转运到手约￥559）",itemNum : 0},
-				{id : "008",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1309/d757f9731b961b7493797166c06e21df.jpg",itemTit:"全新升级！UA 安德玛 Clutchfit Drive 3 篮球",itemPrice:"$62.99（转运到手约￥559）",itemNum : 0},
-				{id : "009",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1309/d757f9731b961b7493797166c06e21df.jpg",itemTit:"全新升级！UA 安德玛 Clutchfit Drive 3 篮球",itemPrice:"$62.99（转运到手约￥559）",itemNum : 0},
-				{id : "010",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1312/3948018c8cf84014fc23b31ce4baf937.jpg",itemTit:"全新升级！UA 安德玛 Clutchfit Drive 3 篮球",itemPrice:"$62.99（转运到手约￥559）",itemNum : 0},
-				{id : "011",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1312/3948018c8cf84014fc23b31ce4baf937.jpg",itemTit:"全新升级！UA 安德玛 Clutchfit Drive 3 篮球",itemPrice:"$62.99（转运到手约￥559）",itemNum : 0},
-				{id : "012",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1309/d757f9731b961b7493797166c06e21df.jpg",itemTit:"全新升级！UA 安德玛 Clutchfit Drive 3 篮球",itemPrice:"$62.99（转运到手约￥559）",itemNum : 0},
-				{id : "013",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1312/3948018c8cf84014fc23b31ce4baf937.jpg",itemTit:"全新升级！UA 安德玛 Clutchfit Drive 3 篮球",itemPrice:"$62.99（转运到手约￥559）",itemNum : 0},
-				{id : "014",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1309/d757f9731b961b7493797166c06e21df.jpg",itemTit:"全新升级！UA 安德玛 Clutchfit Drive 3 篮球",itemPrice:"$62.99（转运到手约￥559）",itemNum : 0},
-				{id : "015",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1312/3948018c8cf84014fc23b31ce4baf937.jpg",itemTit:"全新升级！UA 安德玛 Clutchfit Drive 3 篮球",itemPrice:"$62.99（转运到手约￥559）",itemNum : 0},
-				{id : "016",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1309/d757f9731b961b7493797166c06e21df.jpg",itemTit:"全新升级！UA 安德玛 Clutchfit Drive 3 篮球",itemPrice:"$62.99（转运到手约￥559）",itemNum : 0},
-				{id : "017",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1312/3948018c8cf84014fc23b31ce4baf937.jpg",itemTit:"全新升级！UA 安德玛 Clutchfit Drive 3 篮球",itemPrice:"$62.99（转运到手约￥559）",itemNum : 0},
+				{id : "001",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1309/d757f9731b961b7493797166c06e21df.jpg",itemTit:"全新升级！UA 安德玛 Clutchfit Drive 3 男子篮球鞋",itemPrice:559,itemNum : 0,newPrice : 0},
+				{id : "002",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1309/d757f9731b961b7493797166c06e21df.jpg",itemTit:"全新升级！UA 安德玛 Clutchfit Drive 3 篮球鞋",itemPrice:559,itemNum : 0,newPrice : 0},
+				{id : "003",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1309/d757f9731b961b7493797166c06e21df.jpg",itemTit:"全新升级！UA 安德玛 Clutchfit Drive 3 鞋",itemPrice:559,itemNum : 0,newPrice : 0},
+				{id : "004",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1309/d757f9731b961b7493797166c06e21df.jpg",itemTit:"全新升级！UA 安德玛 Clutchfit Drive 3 男篮球鞋",itemPrice:559,itemNum : 0,newPrice : 0},
+				{id : "005",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1309/d757f9731b961b7493797166c06e21df.jpg",itemTit:"全新升级！UA 安德玛 Clutchfit Drive 3 ",itemPrice:559,itemNum : 0,newPrice : 0},
+				{id : "006",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1309/d757f9731b961b7493797166c06e21df.jpg",itemTit:"全新升级！UA 安德玛 Clutchfit Drive 3 球鞋",itemPrice:559,itemNum : 0,newPrice : 0},
+				{id : "007",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1309/d757f9731b961b7493797166c06e21df.jpg",itemTit:"全新升级！UA 安德玛 Clutchfit Drive 3 篮球",itemPrice:559,itemNum : 0,newPrice : 0},
+				{id : "008",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1309/d757f9731b961b7493797166c06e21df.jpg",itemTit:"全新升级！UA 安德玛 Clutchfit Drive 3 篮球",itemPrice:559,itemNum : 0,newPrice : 0},
+				{id : "009",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1309/d757f9731b961b7493797166c06e21df.jpg",itemTit:"全新升级！UA 安德玛 Clutchfit Drive 3 篮球",itemPrice:559,itemNum : 0,newPrice : 0},
+				{id : "010",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1312/3948018c8cf84014fc23b31ce4baf937.jpg",itemTit:"纯棉百搭！Forever21 男士 撞色插肩袖 七分袖T恤00237365",itemPrice:90,itemNum : 0,newPrice : 0},
+				{id : "011",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1312/3948018c8cf84014fc23b31ce4baf937.jpg",itemTit:"纯棉百搭！Forever21 男士 撞色插肩袖 七分袖T恤00237365",itemPrice:90,itemNum : 0,newPrice : 0},
+				{id : "012",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1309/d757f9731b961b7493797166c06e21df.jpg",itemTit:"全新升级！UA 安德玛 Clutchfit Drive 3 篮球",itemPrice:559,itemNum : 0,newPrice : 0},
+				{id : "013",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1312/3948018c8cf84014fc23b31ce4baf937.jpg",itemTit:"纯棉百搭！Forever21 男士 撞色插肩袖 七分袖T恤00237365",itemPrice:90,itemNum : 0,newPrice : 0},
+				{id : "014",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1309/d757f9731b961b7493797166c06e21df.jpg",itemTit:"全新升级！UA 安德玛 Clutchfit Drive 3 篮球",itemPrice:559,itemNum : 0,newPrice : 0},
+				{id : "015",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1312/3948018c8cf84014fc23b31ce4baf937.jpg",itemTit:"纯棉百搭！Forever21 男士 撞色插肩袖 七分袖T恤00237365",itemPrice:90,itemNum : 0,newPrice : 0},
+				{id : "016",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1309/d757f9731b961b7493797166c06e21df.jpg",itemTit:"全新升级！UA 安德玛 Clutchfit Drive 3 篮球",itemPrice:559,itemNum : 0,newPrice : 0},
+				{id : "017",itemdes : "nike 官网7折",itemImg :"http://shihuo.hupucdn.com/newsIndex11/201702/1312/3948018c8cf84014fc23b31ce4baf937.jpg",itemTit:"纯棉百搭！Forever21 男士 撞色插肩袖 七分袖T恤00237365",itemPrice:90,itemNum : 0,newPrice : 0},
 			]
 		//返回一个对象，这个对象就是这个服务的实例对象（单例）
 		//以上的list 属于私有变量，

@@ -134,6 +134,7 @@ angular.module('myApp')
 					
 					item.itemNum += 1;
 					console.log(item.itemNum);
+					item.newPrice = item.itemNum*item.itemPrice;
 				}
 			}
 		})
@@ -150,7 +151,7 @@ angular.module('myApp')
 							<img class="orderImg" src="${item.itemImg}"></img>
 							<div class="orderDes">
 								<p>${item.itemTit}</p>
-								<div class="address">${item.itemPrice} 数量 ：${item.itemNum}</div>
+								<div class="address">￥${item.newPrice}.00 <input class="jianItem" type="button"  value="-" />数量 ：${item.itemNum}<input class="addItem" type="button"  value="+" /></div>
 							</div>
 						</div>`
 //				self.orderImg = item.itemImg
@@ -162,10 +163,15 @@ angular.module('myApp')
 			}
 //			lists.push(item.id);
 		}
-		
-		console.log(content);
-		
+
 		$('.orderInf').html(content);
-		console.log($('.orderInf').html());
+		
+		
+//		//数量加功能
+//		$(".jianItem").on('click',jian);
+//		jian = function () {
+//			if
+//		}
+//		$(".addItem").on('click',add);
 		
 	}])
