@@ -144,9 +144,12 @@ angular.module('myApp')
 		var self = this;
 		//购物车添加商品功能
 		var content = "";
+		var newContent = "";
 		for(item of pulicService.getlist()){
 			if(item.itemNum >= 1 ){
 				console.log("————————————")
+				//保存该商品ID
+				self.itemId = item.id
 				content += `<div class = "itemInf">
 							<img class="orderImg" src="${item.itemImg}"></img>
 							<div class="orderDes">
@@ -158,6 +161,7 @@ angular.module('myApp')
 //				self.orderInf = item.itemTit;
 //				self.orderAddress = item.itemPrice;
 //				self.itemNum = item.itemNum;
+//				self.newPrice = item.newPrice;
 				//清空该项，放到购物车移除商品事件
 //				item.itemNum = 0;
 			}
@@ -167,11 +171,54 @@ angular.module('myApp')
 		$('.orderInf').html(content);
 		
 		
-//		//数量加功能
-//		$(".jianItem").on('click',jian);
-//		jian = function () {
-//			if
-//		}
-//		$(".addItem").on('click',add);
+		//数量加减功能 需要使用递归 模板字符串方式实现页面效果差,不建议使用
+		$(".jianItem").on('click',jian);
+		function jian() {
+			for(item of pulicService.getlist()) {
+				if (self.itemId == item.id && item.itemNum >= 2){
+					
+					item.itemNum -=1; 
+					item.newPrice = item.itemPrice*item.itemNum;
+					
+					newContent = `<div class = "itemInf">
+							<img class="orderImg" src="${item.itemImg}"></img>
+							<div class="orderDes">
+								<p>${item.itemTit}</p>
+								<div class="address">￥${item.newPrice}.00 <input class="jianItem" type="button"  value="-" />数量 ：${item.itemNum}<input class="addItem" type="button"  value="+" /></div>
+							</div>
+						</div>`
+				}
+			}
+			//更新内容
+			$('.orderInf').html(newContent);
+			$(".addItem").on('click',add);
+			$(".jianItem").on('click',jian);
+		}
+		
+		$(".addItem").on('click',add);
+		
+		function add() {
+			console.log("++++++++");
+			for(item of pulicService.getlist()) {
+				if (self.itemId == item.id){
+					
+					item.itemNum +=1; 
+					item.newPrice = item.itemPrice*item.itemNum;
+					
+					newContent = `<div class = "itemInf">
+							<img class="orderImg" src="${item.itemImg}"></img>
+							<div class="orderDes">
+								<p>${item.itemTit}</p>
+								<div class="address">￥${item.newPrice}.00 <input class="jianItem" type="button"  value="-" />数量 ：${item.itemNum}<input class="addItem" type="button"  value="+" /></div>
+							</div>
+						</div>`
+				}
+			}
+			//更新内容
+			$('.orderInf').html(newContent);
+			$(".addItem").on('click',add);
+			$(".jianItem").on('click',jian);
+		 }
+		
 		
 	}])
