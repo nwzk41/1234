@@ -60,7 +60,7 @@
 .orderInf .orderDes{
 	width: 7rem;
 	height: 2rem;
-	margin: 0.3rem 0;
+	margin: 0.3rem 0.2rem;
 	background-color: white;
 }
 .orderDes p{
@@ -68,4 +68,16 @@
 }
 .orderDes .address{
 	color: red;
+	font-size: 0.45rem;
+}
+.moreAdd{
+	background-color: #ddd;
+    padding: 0.05rem 0.15rem;
+    color: white;
+    font-size: 0.42667rem;
+    border: 0.0267rem;
+    border-radius: .2rem
+}
+.itemNum{
+	margin-left: .8rem;
 }

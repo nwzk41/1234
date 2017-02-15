@@ -24,7 +24,13 @@
 				<img class="orderImg" ng-src="{{item.itemImg}}"></img>
 				<div class="orderDes">
 					<p>{{item.itemTit}}</p>
-					<div class="address">{{item.newPrice| currency : "￥"}}<input ng-click="moreCtrl.jian(item.id);" type="button"  value="-" />数量 ：{{item.itemNum}}<input ng-click="moreCtrl.add(item.id);" type="button"  value="+" /></div>
+					<div class="address">{{item.newPrice| currency : "￥"}}
+						<span class="itemNum">数量 ：
+							<input class="moreAdd" ng-click="moreCtrl.jian(item.id);" type="button"  value="-" />
+							{{item.itemNum}}
+							<input class="moreAdd" ng-click="moreCtrl.add(item.id);" type="button"  value="+" />
+						</span>
+					</div>
 				</div>
 			</div>
 		</div>
