@@ -1,4 +1,4 @@
-//所有控制器的文件
+//所有控制器的文件---
 
 angular.module('myApp')
 	//依赖注入$css (这个是angularCSS这个插件中的服务)
@@ -146,6 +146,7 @@ angular.module('myApp')
 		var content = "";
 		var newContent = "";
 		var userOrderList = [{id : "000",itemde : "nike 官网7折",itemIm :"http://shihuo.hupucdn.com/newsIndex11/201702/1309/d757f9731b961b7493797166c06e21df.jpg",itemTi:"全新升级！UA 安德玛 Clutchfit Drive 3 男子篮球鞋",itemPric:559,itemNu : 0,newPric : 0}];
+//		var id
 		for(item of pulicService.getlist()){
 			//新的数据处理方法  创建新数组，不使用模板字符串，直接使用angularJS ng-repeat 循环数据，添加到页面上 
 			if(item.itemNum >= 1 ){
@@ -153,86 +154,40 @@ angular.module('myApp')
 					if (liItem.id  == item.id) {
 						break;
 					}
-				}
+				}   
+//				id = item.id
 				userOrderList.push(item);
-//				self.orderImg = item.itemImg
-//				self.orderInf = item.itemTit;
-//				self.orderAddress = item.itemPrice;
-//				self.itemNum = item.itemNum;
-//				self.newPrice = item.newPrice;
+
 				self.itemList = userOrderList;
-//				console.log("————————————")
-//				//保存该商品ID
-//				self.itemId = item.id
-//				content += `<div class = "itemInf">
-//							<img class="orderImg" src="${item.itemImg}"></img>
-//							<div class="orderDes">
-//								<p>${item.itemTit}</p>
-//								<div class="address">￥${item.newPrice}.00 <input class="jianItem" type="button"  value="-" />数量 ：${item.itemNum}<input class="addItem" type="button"  value="+" /></div>
-//							</div>
-//						</div>`
-//				self.orderImg = item.itemImg
-//				self.orderInf = item.itemTit;
-//				self.orderAddress = item.itemPrice;
-//				self.itemNum = item.itemNum;
-//				self.newPrice = item.newPrice;
-				//清空该项，放到购物车移除商品事件
-//				item.itemNum = 0;
 			}
-//			lists.push(item.id);
 		}
 		console.log(userOrderList)
-//		$('.orderInf').html(content);
+
 		
 		
 		//数量加减功能 需要使用递归 模板字符串方式实现页面效果差,不建议使用
-//		$(".jianItem").on('click',jian);
-//		function jian() {
-//			for(item of pulicService.getlist()) {
-//				if (self.itemId == item.id && item.itemNum >= 2){
-//					
-//					item.itemNum -=1; 
-//					item.newPrice = item.itemPrice*item.itemNum;
-//					
-//					newContent = `<div class = "itemInf">
-//							<img class="orderImg" src="${item.itemImg}"></img>
-//							<div class="orderDes">
-//								<p>${item.itemTit}</p>
-//								<div class="address">￥${item.newPrice}.00 <input class="jianItem" type="button"  value="-" />数量 ：${item.itemNum}<input class="addItem" type="button"  value="+" /></div>
-//							</div>
-//						</div>`
-//				}
-//			}
-//			//更新内容
-//			$('.orderInf').html(newContent);
-//			$(".addItem").on('click',add);
-//			$(".jianItem").on('click',jian);
-//		}
-//		
-//		$(".addItem").on('click',add);
-//		
-//		function add() {
-//			console.log("++++++++");
-//			for(item of pulicService.getlist()) {
-//				if (self.itemId == item.id){
-//					
-//					item.itemNum +=1; 
-//					item.newPrice = item.itemPrice*item.itemNum;
-//					
-//					newContent = `<div class = "itemInf">
-//							<img class="orderImg" src="${item.itemImg}"></img>
-//							<div class="orderDes">
-//								<p>${item.itemTit}</p>
-//								<div class="address">￥${item.newPrice}.00 <input class="jianItem" type="button"  value="-" />数量 ：${item.itemNum}<input class="addItem" type="button"  value="+" /></div>
-//							</div>
-//						</div>`
-//				}
-//			}
-//			//更新内容
-//			$('.orderInf').html(newContent);
-//			$(".addItem").on('click',add);
-//			$(".jianItem").on('click',jian);
-//		 }
-		
-		
+		//减法功能
+		self.jian = function (id) { 
+			console.log("--------")
+			for(item of userOrderList) {
+				if (id == item.id && item.itemNum >= 2){				
+					item.itemNum -=1; 
+					item.newPrice = item.itemPrice*item.itemNum;
+
+				}
+			}
+
+		}
+		//加法功能
+		self.add = function (id) {
+			for(item of userOrderList) {
+				if (id == item.id ){				
+					item.itemNum +=1; 
+					item.newPrice = item.itemPrice*item.itemNum;
+
+				}
+			}
+
+		}
+	
 	}])

@@ -18,12 +18,13 @@
 				{{moreCtrl.orderAddress}} 数量 ：{{moreCtrl.itemNum }}
 			</div>
 		</div>-->
-		<div ng-repeat="item in moreCtrl.itemList">
+		
+		<div ng-repeat="item in moreCtrl.itemList | orderBy:itemImg" ng-if="$index > 0">
 			<div class = "itemInf">
 				<img class="orderImg" ng-src="{{item.itemImg}}"></img>
 				<div class="orderDes">
 					<p>{{item.itemTit}}</p>
-					<div class="address">{{item.newPrice}}<input class="jianItem" type="button"  value="-" />数量 ：{{item.itemNum}}<input class="addItem" type="button"  value="+" /></div>
+					<div class="address">{{item.newPrice| currency : "￥"}}<input ng-click="moreCtrl.jian(item.id);" type="button"  value="-" />数量 ：{{item.itemNum}}<input ng-click="moreCtrl.add(item.id);" type="button"  value="+" /></div>
 				</div>
 			</div>
 		</div>
