@@ -47,23 +47,15 @@
 	<!-- 精选推荐 -->
 	<div class="jxTuiJian">
 		<h2>精选推荐</h2>
+		<!-- 二级菜单选项 -->
 		<div class="jxTuiJianList">
 				<div class="jxTuiJianItem" ng-repeat="item in cartCtrl.tuijianList">
-					<p ng-click="cartCtrl.changePage('{{item.type}}');">{{item.title}}</p>
-					<ul ng-switch on="cartCtrl.listType">
-						<li ng-switch-when="0">哈哈</li>
-						<li ng-switch-when="1">1</li>
-						<li ng-switch-when="2">2</li>
-						<li ng-switch-when="3">4</li>
-						<li ng-switch-when="4">5</li>
-						<li ng-switch-when="5">6</li>
-						<li ng-switch-when="6">7</li>
-						<li ng-switch-when="7">8</li>
-						<li ng-switch-when="8">0</li>
-						<li ng-switch-default>其他</li>
-					</ul>
+					<p ng-click="cartCtrl.changePage('{{item.type}}');" ui-sref=".itemType({type : item.type})">{{item.title}}</p>
 				</div>
 		</div>
-
+		<!--二级菜单显示页面-->
+		<div ui-view ="itemType">
+			
+		</div>
 	</div>
 </div>

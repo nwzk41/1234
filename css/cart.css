@@ -63,6 +63,10 @@
 	flex-wrap: nowrap;
 	overflow:auto;
 	padding-bottom: 0.2rem;
+	
+}
+.jxTuiJianList{
+	border-bottom: 0.02667rem dashed #bbb;
 }
 
 .zhuantiItem img{

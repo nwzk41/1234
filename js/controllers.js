@@ -26,14 +26,6 @@ angular.module('myApp')
 				observeParents:true,//修改swiper的父元素时，自动初始化swiper
 		});
 		
-		//精选swiper
-//		var jxSwiper = new Swiper('.jingxuan .swiper-container', {
-//				observer:true,//修改swiper自己或子元素时，自动初始化swiper
-//				observeParents:true,//修改swiper的父元素时，自动初始化swiper
-//		        slidesPerView: "auto",
-//		        paginationClickable: true,
-//				
-//		});
 		var jxSwiper = new Swiper('.jingxuan .swiper-container', {
 //			        pagination: '.swiper-pagination',
 			        slidesPerView: 'auto',
@@ -42,34 +34,7 @@ angular.module('myApp')
 			        observer:true,//修改swiper自己或子元素时，自动初始化swiper
 					observeParents:true,
 			    });
-//		//上划搜索框变色事件
-//		$(".home").on('up',upScroll);
-//		function upScroll(){
-//			$(".nav").css({"background":"black"});
-//		}
-//		var firX ,firY;
-//		$(".home").mousemove(function(event){
-//			console.log("_______")
-//			firX = event.pageX
-//			firY = event.pageY
-//		})
-//				.mouseup(function(event){
-//			var lasX = event.pageX
-//			var lasY = event.pageY
-//
-//			if(lasY-firY<=-50 &&Math.abs(lasX-firX")<"50){
-//				$(this).trigger("up");
-//			}
-//			else if(lasY-firY>=50 &&Math.abs(lasX-firX)<50){
-//				$(this).trigger("down");
-//			}
-//			else if(lasX-firX>=50 &&Math.abs(lasY-firY)<50){
-//				$(this).trigger("right");
-//			}
-//			else if(lasX-firX<=-50 &&Math.abs(lasY-firY)<50){
-//				$(this).trigger("left");
-//			}
-//		})
+
 	}])
 	.controller('MarketCtrl',['$location',function ($location) {
 		var self = this;
@@ -103,17 +68,23 @@ angular.module('myApp')
 			})
 		
 	}])
+	//清单分类控制器
+	.controller('ItemTypeCtrl',["$css",'$stateParams',function ($css,$stateParams) {
+		$css.add('css/itemType.css');
+		var self = this;
+		self.type = $stateParams.type;
+	}])
 	.controller('MineCtrl',['$css','mineService',function ($css,mineService) {
 		$css.add('css/mine.css');
 		var self = this;
 		self.itemList = mineService.getMineList();
 	}])
-	.controller('XiangQingCtrl',['$css','$routeParams','pulicService',function ($css,$routeParams,pulicService) {
+	.controller('XiangQingCtrl',['$css','$stateParams','pulicService',function ($css,$stateParams,pulicService) {
 		$css.add("css/xiangqing.css");
 		//$routeParams 可以获取到通过路由传过来的所有参数，
 		//我们可以通过点语法获取相应的参数
 		var self = this;
-		self.name = $routeParams.name;
+		self.name = $stateParams.name;
 		self.list = pulicService.getlist();
 		var lists = [];
 		//添加详情页的参数
