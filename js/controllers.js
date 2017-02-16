@@ -36,7 +36,8 @@ angular.module('myApp')
 //			    });
 
 	}])
-	.controller('MarketCtrl',['$location',function ($location) {
+	.controller('MarketCtrl',['$location','$css',function ($location,$css) {
+		$css.add('css/market.css');
 		var self = this;
 		self.goBack = function () {
 			//默认浏览器历史记录
@@ -45,8 +46,9 @@ angular.module('myApp')
 			$location.path('home');
 		};
 		$('.market h1').css({
-			color : 'white'
+			color : 'black'
 		});
+		
 	}])
 	.controller('CartCtrl',['$css','CartService',function ($css,CartService) {
 		$css.add('css/cart.css');
@@ -135,7 +137,7 @@ angular.module('myApp')
 						break;
 					}
 				}   
-//				id = item.id
+//				id = item.ido8]]]]]]]][7]
 				userOrderList.push(item);
 
 				self.itemList = userOrderList;
@@ -171,3 +173,5 @@ angular.module('myApp')
 		}
 	
 	}])
+
+	
