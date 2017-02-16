@@ -19,7 +19,7 @@
 			</div>
 		</div>-->
 		
-		<div ng-repeat="item in moreCtrl.itemList | orderBy:itemImg" ng-if="$index > 0">
+		<div ng-repeat="item in moreCtrl.itemList" ng-if="$index > 0">
 			<div class = "itemInf">
 				<img class="orderImg" ng-src="{{item.itemImg}}"></img>
 				<div class="orderDes">

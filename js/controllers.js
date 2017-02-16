@@ -26,14 +26,14 @@ angular.module('myApp')
 				observeParents:true,//修改swiper的父元素时，自动初始化swiper
 		});
 		
-		var jxSwiper = new Swiper('.jingxuan .swiper-container', {
-//			        pagination: '.swiper-pagination',
-			        slidesPerView: 'auto',
-			        paginationClickable: true,
-			        spaceBetween: 30,
-			        observer:true,//修改swiper自己或子元素时，自动初始化swiper
-					observeParents:true,
-			    });
+//		var jxSwiper = new Swiper('.jingxuan .swiper-container', {
+////			        pagination: '.swiper-pagination',
+//			        slidesPerView: 'auto',
+//			        paginationClickable: true,
+//			        spaceBetween: 30,
+//			        observer:true,//修改swiper自己或子元素时，自动初始化swiper
+//					observeParents:true,
+//			    });
 
 	}])
 	.controller('MarketCtrl',['$location',function ($location) {
@@ -69,10 +69,19 @@ angular.module('myApp')
 		
 	}])
 	//清单分类控制器
-	.controller('ItemTypeCtrl',["$css",'$stateParams',function ($css,$stateParams) {
+	.controller('ItemTypeCtrl',["$css",'$stateParams','mineService','$state',function ($css,$stateParams,mineService,$state) {
 		$css.add('css/itemType.css');
 		var self = this;
+		self.typeList = [];
 		self.type = $stateParams.type;
+		self.itemTypeList = mineService.getMineList();
+//		console.log(self.type);
+		for(item of self.itemTypeList){
+			if(self.type == item.type){
+				self.typeList.push(item);
+			}
+		}
+//		
 	}])
 	.controller('MineCtrl',['$css','mineService',function ($css,mineService) {
 		$css.add('css/mine.css');

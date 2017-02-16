@@ -24,6 +24,7 @@
 	background: url("../img/search_0b8e800.png") no-repeat;
 	background-position: 0.1rem center;
 	background-size: .34667rem;
+	background-color: white;
 }
 .home>.swiper-container{
 	width: 100%;
@@ -33,7 +34,7 @@
 						
 .swiper-wrapper img{
 	width: 100%;
-	height: 5.0667rem;
+	/*height: 5.0667rem;*/
 }
 /*精选swiper 样式*/
 /*.jingxuan .swiper-container{
@@ -55,18 +56,16 @@
 .jingxuan  .swiper-container {
         width: 100%;
         height: 100%;
+        overflow: auto;
     }
 .jingxuan .swiper-wrapper{
 	
 }
 .jingxuan  .swiper-slide {
-		width: 80%;
-        text-align: center;
-        font-size: 18px;
+		width: 60%;
         background: #fff;
-        width: 80%;
-        border: 1px solid black;
-
+        /*border: 1px solid black;*/
+		margin:.2rem;
         /* Center slide text vertically */
         display: -webkit-box;
         display: -ms-flexbox;
@@ -156,12 +155,26 @@
 	width: 100%;
 	background-color: white;
 }
-.jingxuan h2,.tuijian h2{
-	width: 100%;
+.jingxuan h2{
+	width: 95%;
+    margin: 0 auto;
 	height: 1rem;
-	/*line-height: 1rem;*/
+	line-height: 1rem;
 }
-
+.tuijian h2{
+	width: 95%;
+    margin: 0 auto;
+	height: 1rem;
+}
+.tuijian .mrTuiJian{
+	width: 95%;
+    margin: 0 auto;
+	height: 1rem;
+	line-height: 1rem;
+}
+.tuijian .hotSale{
+	line-height: 1rem;
+}
 /*推荐样式*/
 .tuijian{
 	width: 100%;
