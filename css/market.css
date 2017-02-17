@@ -2,6 +2,127 @@
 	width: 100%;
 	height: 1.2rem;
     line-height: 1.2rem;
-	background-color: #EEEEEE;
+	background-color: rgba(0,0,0,.3);
 	border-bottom: 0.0267rem solid #bbb;
+	position: fixed;
+	top: 0;
+}
+.market .class1d{
+			width: 0;
+			height: 0;
+			border-top: 0.4rem solid transparent;
+		    border-right: 0.69333rem solid transparent;
+		    border-bottom: 0.4rem solid #FFFFFF;
+		    border-left: 0.69333rem solid transparent;
+		}
+	.market	.class2d{
+			width: 1.38667rem ;height: 0.8rem;background-color: #FFF;
+			background: url(http://shihuo.hupucdn.com/trade/goods/style/201611/0211/051805f3f7685e0d624eb44f93760304.jpg?imageView2/1/w/100/h/100);
+			background-size: 1.38667rem 1rem;
+		}
+	
+	.market	.class3{
+			width: 0;
+			height: 0;
+			border-bottom: 0.4rem solid transparent;
+			border-right: 0.69333rem  solid transparent;
+			border-top: 0.4rem solid #FFF;
+			border-left:  0.69333rem  solid transparent;
+		}
+	.market	.lbxZong{
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+		}
+	.market	.liubianxing{
+			margin: 0 .133rem;
+		}
+.bgZong{
+	width: 100%;
+	height:4.8rem;
+	background: url(http://shihuo.hupucdn.com/appZones/201701/1815/18dad2cc843300a3560cca54886957e5.png?imageView2/0/w/400/h/208/interlace/1%7cimageMogr2/format/jpg);
+	background-size: 100% 4.8rem;
+	color: white;
+}
+#bgZong2{
+	background: url(http://shihuo.hupucdn.com/appZones/201701/1815/d5bdeb4f9dee46e6cf24e239da707bc3.png?imageView2/0/w/400/h/208/interlace/1%7cimageMogr2/format/jpg);
+}
+#bgZong3{
+	background: url(http://shihuo.hupucdn.com/appZones/201701/1815/fa1b657f6d267f5ccb6c3213ba7cebd3.png?imageView2/0/w/400/h/208/interlace/1%7cimageMogr2/format/jpg);
+}
+.bgZong .bgWenzi{
+	width: 100%;
+	display: flex;
+	padding-top: .2667rem;
+	flex-direction: column;
+	align-items: center;
+}
+.bgWenzi h2{
+	font-size: .667rem;
+}
+.bgWenzi .bgDesc{
+	width: 60%;
+	text-align: center;
+	font-size: .373rem;
+}
+.bgType{
+	margin-bottom: .2667rem;
+}
+.bgType ul{
+	display: flex;
+	flex-wrap: wrap;
+	background-color: white;
+}
+.bgType ul li{
+	font-size: .32rem;
+	width: 25%;
+	padding: .667rem 0;
+	text-align: center;
+	box-sizing: border-box;
+	border: .01333rem solid #eee;
+}
+#Pic1{
+	background: url(http://shihuo.hupucdn.com/trade/goods/style/20161227/b27284c5a22f715df5de46917c14432d1482821772.jpg?imageView2/1/w/100/h/100);
+	background-size: 1.38667rem 1rem;
+}
+#Pic2{
+	background-image:url(http://shihuo.hupucdn.com/trade/goods/style/20160918/69fd2e4f11f1e9886deaac3a03894c5d1474179471.jpg?imageView2/1/w/100/h/100);
+	background-size: 1.38667rem 1rem;
+}
+#Pic3{
+	background-image:url(http://shihuo.hupucdn.com/trade/goods/style/20161008/51d32e6ca118ac77ba73100ed80097361475937344.jpg?imageView2/1/w/100/h/100);
+	background-size: 1.38667rem 1rem;;
+}
+#Pic4{
+	background-image:url(http://shihuo.hupucdn.com/trade/goods/style/20161006/02eb761c9bbb5118441d37702d1b4b401475724942.jpg?imageView2/1/w/100/h/100);
+	background-size: 1.38667rem 1rem;;
+}
+#Pic5{
+	background-image:url(http://shihuo.hupucdn.com/trade/goods/style/20161228/d0a679af5c7b81f8cab118df655343b31482922437.jpg?imageView2/1/w/100/h/100);
+	background-size: 1.38667rem 1rem;;
+}
+#Pic6{
+	background-image:url(http://shihuo.hupucdn.com/trade/goods/style/20170207/837cdff8c37dcccb63b994c81daff04e1486432842.jpg?imageView2/1/w/100/h/100);
+	background-size: 1.38667rem 1rem;;
+}
+#Pic7{
+	background-image:url(http://shihuo.hupucdn.com/trade/goods/style/201605/2715/c16cc04604425a9e6c42de774e39a224.jpg?imageView2/1/w/100/h/100);
+	background-size: 1.38667rem 1rem;;
+}
+#Pic8{
+	background-image:url(http://shihuo.hupucdn.com/trade/goods/style/20161210/a46e732148a7b2e69f20972b21a6c3521481380845.jpg?imageView2/1/w/100/h/100);
+	background-size: 1.38667rem 1rem;;
+}
+#Pic9{
+	background-image:url(http://shihuo.hupucdn.com/trade/goods/style/20160829/78b2562a9e688d636b5a5c5b460f089d1472437170.jpg?imageView2/1/w/100/h/100);
+	background-size: 1.38667rem 1rem;;
+}
+#Pic10{
+	background-image:url(http://shihuo.hupucdn.com/trade/goods/style/20161203/174cbf8c9ebdb7d58e9fb9faa9ce5de21480765642.jpg?imageView2/1/w/100/h/100);
+	background-size: 1.38667rem 1rem;;
+}
+#Pic11{
+	background-image:url(http://shihuo.hupucdn.com/trade/goods/style/20161017/0ae1d2b201c1f8ca2b4a0babf1a8af691476710563.jpg?imageView2/1/w/100/h/100);
+	background-size: 1.38667rem 1rem;;
 }
